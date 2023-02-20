@@ -1,10 +1,11 @@
 const cols = document.querySelectorAll(".col");
+const btnChange = document.querySelector(".btn__change-colors");
 
-document.addEventListener("click", () => {
+btnChange.addEventListener("click", () => {
   setRandomColors();
 });
-
-/* document.addEventListener("click", (event) => {
+/* Реализация изменения цвета через клавишу space */
+/* document.addEventListener("keydown", (event) => {
   event.preventDefault();
   if (event.code.toLowerCase() == "space") {
     setRandomColors();
