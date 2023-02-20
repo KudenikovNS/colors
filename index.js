@@ -1,11 +1,15 @@
 const cols = document.querySelectorAll(".col");
 
-document.addEventListener("keydown", (event) => {
+document.addEventListener("click", () => {
+  setRandomColors();
+});
+
+/* document.addEventListener("click", (event) => {
   event.preventDefault();
   if (event.code.toLowerCase() == "space") {
     setRandomColors();
   }
-});
+}); */
 
 document.addEventListener("click", (event) => {
   const type = event.target.dataset.type;
@@ -15,22 +19,12 @@ document.addEventListener("click", (event) => {
       event.target.tagName.toLowerCase() === "i"
         ? event.target
         : event.target.children[0];
-    /*     console.log(node); */
     node.classList.toggle("fa-lock-open");
     node.classList.toggle("fa-lock");
   } else if (type === "copy") {
     copyToClickBoard(event.target.textContent);
   }
 });
-
-/* function generateRandomColor() {
-  const hexCodes = "0123456789ABCDEF";
-  let color = "";
-  for (let i = 0; i < 6; i++) {
-    color += hexCodes[Math.floor(Math.random() * hexCodes.length)];
-  }
-  return "#" + color;
-} */
 
 function copyToClickBoard(text) {
   return navigator.clipboard.writeText(text);
