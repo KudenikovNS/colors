@@ -87,7 +87,7 @@ body {
     height: calc(100vh - 60px);
   }
 
-  .btn__change-colors {
+  .btn__change--colors {
     bottom: 0px;
     width: 100%;
   }
