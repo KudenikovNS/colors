@@ -53,7 +53,7 @@ body {
   cursor: pointer;
 }
 
-.btn__change-colors {
+.btn__change--colors {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -73,7 +73,7 @@ body {
   margin: 0 auto;
 }
 
-.btn__change-colors:not(.active) {
+.btn__change--colors:not(.active) {
   box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8),
     inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3),
     0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;

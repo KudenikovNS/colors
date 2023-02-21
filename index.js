@@ -1,5 +1,5 @@
 const cols = document.querySelectorAll(".col");
-const btnChange = document.querySelector(".btn__change-colors");
+const btnChange = document.querySelector(".btn__change--colors");
 
 btnChange.addEventListener("click", () => {
   setRandomColors();
